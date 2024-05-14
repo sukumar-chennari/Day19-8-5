@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        @keyframes ball_Movement {
+            from{
+                top:10%
+            }
+            to{
+                top: 50%;
+            }
+        }
+
+        div{
+            background-color: black;
+            top: 10%;
+            
+            position: absolute;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+
+            animation-name: ball_Movement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        div:nth-child(even){
+            background-color: aqua;
+            animation-direction: reverse;
+        }
+
+        .a{
+            left:0%
+        }
+        .b{
+            left: 25%;
+        }
+        .c{
+            left: 50%;
+        }
+
+        .d{
+            left: 75%;
+        }
+        body>div{
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div  class="a"></div>
+    <div  class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    
+</body>
+</html>

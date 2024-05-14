@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Reflection </title>
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        div{
+            position: relative;
+            left: 40%;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+
+       .one:hover{
+        -webkit-box-reflect: left;
+       }
+
+       .two:hover{
+        -webkit-box-reflect: right;
+       }
+       .three:hover{
+        -webkit-box-reflect: above;
+       }
+       .four:hover{
+        -webkit-box-reflect: below;
+       }
+    </style>
+</head>
+<body>
+    <div >
+        <img  class="one" src="./images/tout-13_reasons_why.jpg" alt="">
+        <img class="two" src="./images/tout-13_reasons_why.jpg" alt="">
+    </div>
+    <br>
+    <div >
+        <img  class="three" src="./images/tout-13_reasons_why.jpg" alt="">
+        <img  class="four" src="./images/tout-13_reasons_why.jpg" alt="">
+    </div>
+    
+</body>
+</html>
